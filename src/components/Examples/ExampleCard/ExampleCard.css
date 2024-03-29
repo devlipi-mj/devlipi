@@ -1,0 +1,37 @@
+.example-card {
+    border-radius: 0.65rem;
+    border: 1.5px solid #76B4F0;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(17, 41, 47, 0.398);
+    backdrop-filter: blur(1rem);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.example-card:hover,
+.example-card.active {
+    background: linear-gradient(180deg, #76B4F0 0%, #0b9cb9 100%);
+}
+
+.example-card span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+    .example-card {
+        padding: 2rem;
+    }
+
+    .example-card span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .example-card span {
+        font-size: 0.9rem;
+    }
+}
