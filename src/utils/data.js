@@ -1,25 +1,35 @@
 export const EXAMPLES = [
     {
-        title: "Example 1",
+        title: "Print",
         examples: [
             {
                 example: 
                 `
-                kriya maxNum|i, j| => {
-                    yadi (i > j) {
-                        prakashan i + ' is greater than ' + j;
-                    } anyatha {
-                        prakashan j + ' is greater than ' + i;
-                    };
-                };
-                
-                maxNum|1, 8|;
+                prakashan 'this is DevLipi';
                 `
             }
         ]
     },
     {
-        title: "Example 2",
+        title: "Variables",
+        examples: [
+            {
+                example: 
+                `
+                -> you can declare variables using @ <-
+                @text = 'h'; 
+                @number = 18;
+                @float = 1.5;
+                prakashan 'this is text > ' + text;
+                prakashan 'this is number > ' + number;
+                prakashan 'this is float > ' + float;
+                `
+            }
+        ]
+        
+    },
+    {
+        title: "Loops",
         examples: [
             {
                 example: 
@@ -36,23 +46,7 @@ export const EXAMPLES = [
         ]
     },
     {
-        title: "Example 3",
-        examples: [
-            {
-                example: 
-                `
-                @text = 'h'; -> declare variables using @ <-
-                @number = 18;
-                @float = 1.5;
-                prakashan 'this is text > ' + text;
-                prakashan 'this is number > ' + number;
-                prakashan 'this is float > ' + float;
-                `
-            }
-        ]
-    },
-    {
-        title: "Example 4",
+        title: "Functions",
         examples: [
             {
                 example: 

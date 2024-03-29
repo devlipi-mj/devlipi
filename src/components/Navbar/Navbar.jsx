@@ -18,7 +18,7 @@ export const Navbar = () => {
       
           <ul className={`menu-items ${openMenu ? 'open' : ''}`}>
             <li>
-              <a className="menu-item" href="#home">Home</a>
+              <a className="menu-item" href="#hero">Home</a>
             </li>
             <li>
               <a className="menu-item" href="#examples">Examples</a>
