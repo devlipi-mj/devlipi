@@ -1,0 +1,48 @@
+.examples-info-card {
+    min-height: auto;
+    width: 50rem;
+    border-radius: 0.65rem;
+    border: 1.5px solid #76B4F0;
+    background: rgba(17, 41, 47, 0.398);
+    backdrop-filter: blur(1rem);
+}
+
+.examples-info-card h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(180deg, #76B4F0 0%, #0b9cb9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #76B4F0;
+}
+
+.examples-info-content {
+    padding: 1rem;
+}
+
+.examples-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.examples-info code {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1025px) {
+    .examples-info-card h6 {
+        font-size: 1.1rem;
+    }
+
+    .examples-info p {
+        font-size: 0.9rem;
+    }
+
+    .examples-info-content {
+        padding: 1.5rem;
+    }
+}
