@@ -2,7 +2,7 @@
   "name": "devlipi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MayurdhvajsinhJadeja.github.io/DevLipi-Web",
+  "homepage": "https://devlipi-mj.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
