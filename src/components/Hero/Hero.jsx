@@ -3,7 +3,7 @@ import './Hero.css'
 
 export const Hero = () => {
   return (
-    <section className="hero-container">
+    <section id="hero" className="hero-container">
         <div className="hero-content">
             <h2>Introducing <span className="highlight">DevLipi</span> </h2>
             <p>The whimsical wonderland of coding crafted with a sprinkle of <em>Sanskrit</em> inspired syntax. DevLipi is crafted with a backend powered by JavaScript, ensuring a robust foundation.

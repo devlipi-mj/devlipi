@@ -1,0 +1,44 @@
+.tryit-container{
+    height: 90vh;
+}
+.copy {
+    background-color: #0EB1D2; 
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0.8rem 0 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+.copy:hover {
+    background-color: #23daff;
+}
+  
+.code-editor {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    max-height: 650px; 
+    min-height: 650px; 
+    resize: none;
+    scroll-behavior: smooth;
+}
+
+.editor-output-terminal {
+    background-color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    overflow-y: auto; 
+    max-height: 200px; 
+  }
+  
+  .editor-output-terminal pre {
+    margin: 0;
+  }

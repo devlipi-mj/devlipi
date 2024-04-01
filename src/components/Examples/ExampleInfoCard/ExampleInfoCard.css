@@ -1,48 +1,127 @@
 .examples-info-card {
-    min-height: auto;
     width: 50rem;
     border-radius: 0.65rem;
     border: 1.5px solid #76B4F0;
-    background: rgba(17, 41, 47, 0.398);
+    background: rgb(36, 36, 36);
     backdrop-filter: blur(1rem);
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear {
+    background-color: #0EB1D2;
+    margin: 0 0.8rem 0 0.8rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+.clear:hover {
+    background-color: #23daff; /* Darken the background color on hover */
+  }
+
+.examples-info-content {
+    padding: 0.5rem;
+}
+
+
+.examples-info code {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
 }
 
 .examples-info-card h6 {
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 0.8rem 2rem;
     background: linear-gradient(180deg, #76B4F0 0%, #0b9cb9 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 1.5px solid #76B4F0;
-}
-
-.examples-info-content {
-    padding: 1rem;
-}
-
-.examples-info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.examples-info code {
+.examples-output-terminal {
+    background-color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    overflow-y: auto; 
+    max-height: 200px; 
+  }
+  
+  .examples-output-terminal pre {
+    margin: 0;
+  }
+  
+  .runcode {
+    background-color: #0EB1D2;
+    color: white;
+    margin: 0 0.8rem 0 0.8rem;
     font-size: 1rem;
     font-weight: 500;
-}
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  .runcode:hover {
+    background-color: #23daff; 
+  }
+
+  .copy-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0EB1D2;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .copy-notification.show {
+    opacity: 1;
+  }
+  
+  .copy-notification.hide {
+    opacity: 0;
+  }
+
+  .copy {
+    background-color: #0EB1D2; 
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0.8rem 0 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .copy:hover {
+    background-color: #23daff;
+  }
 
 @media (max-width: 1025px) {
     .examples-info-card h6 {
         font-size: 1.1rem;
-    }
-
-    .examples-info p {
-        font-size: 0.9rem;
-    }
-
-    .examples-info-content {
-        padding: 1.5rem;
     }
 }

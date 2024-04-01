@@ -9,6 +9,14 @@ export const Navbar = () => {
     setMenuOpen(!openMenu);
   };
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <>
     <MobileNavbar isOpen={openMenu} toggleMenu={toggleMenu}/>
@@ -18,18 +26,18 @@ export const Navbar = () => {
       
           <ul className={`menu-items ${openMenu ? 'open' : ''}`}>
             <li>
-              <a className="menu-item" href="#hero">Home</a>
+              <a className="menu-item" onClick={() => scrollToSection('hero')}>Home</a>
             </li>
             <li>
-              <a className="menu-item" href="#examples">Examples</a>
+              <a className="menu-item" onClick={() => scrollToSection('examples')}>Examples</a>
             </li>
             <li>
-              <a className="menu-item" href="#try-it">Try It</a>
+              <a className="menu-item" onClick={() => scrollToSection('tryit')}>Try It</a>
             </li>
             <li>
-              <a className="menu-item" href="#contact-me">Contact Me</a>
+              <a className="menu-item" onClick={() => scrollToSection('contact')}>Contact Me</a>
             </li>
-            <button className="download-btn" onClick={() => {}}>Download</button>
+            <button className="download-btn" onClick={() => scrollToSection('download')}>Download</button>
           </ul>
           <button
             className={`menu-btn ${openMenu ? 'open' : ''}`}
