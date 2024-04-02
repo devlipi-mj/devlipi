@@ -70,7 +70,7 @@ button.copy:hover {
 
 @media (max-width: 1024px) {
     .download-container {
-        height: 101vh;
+        height: auto;
     }
     
     .download-container p {
