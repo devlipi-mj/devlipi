@@ -25,17 +25,16 @@
     font-size: 1rem;
     margin: 0.5rem;
     margin-top: 5rem;
-    margin-bottom: 1.5rem; /* Adjusted margin */
+    margin-bottom: 1.5rem;
 }
 
 .download-container .npm-command {
-    margin-bottom: 1.5rem; /* Adjusted margin */
+    margin-bottom: 1.5rem; 
 }
 
 .download-container .npm-command pre,
 .download-container .npm-command button.copy {
-    display: inline-block; /* Make pre and button inline */
-    /* vertical-align: middle; Align vertically */
+    display: inline-block;
 }
 
 .download-container button {
@@ -49,7 +48,13 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
+button.copy {
+    background-color: rgb(126, 177, 160);
+}
 
+button.copy:hover {
+    background-color: rgb(153, 212, 192) !important;
+}
 .download-container button:hover {
     background-color: #28d1f3;
 }
@@ -61,4 +66,25 @@
 
 .download-container a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .download-container {
+        height: 101vh;
+    }
+    
+    .download-container p {
+        margin-top: 10rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .download-container h1 {
+        font-size: 2rem;
+    }
+    .download-container p {
+        margin-top: 5rem;
+    }
+
 }

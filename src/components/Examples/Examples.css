@@ -42,7 +42,7 @@
     filter: blur(225px);
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .examples {
         padding-left: 1rem;
     }
@@ -63,7 +63,9 @@
     .examples-info {
         width: 100%;
     }
-
+    .examples-container {
+        height: auto;
+    }
     .examples-container h5 {
         font-size: 1.3rem;
         margin-bottom: 2rem;
@@ -78,5 +80,6 @@
 @media (max-width: 600px) {
     .examples-container{
         padding: 0;
+        height: auto;
     }
 }

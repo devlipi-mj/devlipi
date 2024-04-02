@@ -84,7 +84,7 @@ const ExampleInfoCard = ({ heading, examples }) => {
     <div className="examples-info-card">
       <div className="header">
         <h6>{heading}</h6>
-        <div>
+        <div className='buttonsinfocard'>
           <button className="runcode" onClick={runDevlipiClass}>Run</button>
           <button className="clear" onClick={clearOutput}>Clear</button>
           <button className="copy" onClick={copyCodeToClipboard}>&#128203;</button>

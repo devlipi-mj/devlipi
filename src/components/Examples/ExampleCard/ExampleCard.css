@@ -20,7 +20,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .example-card {
         padding: 2rem;
     }
@@ -33,5 +33,21 @@
 @media (max-width: 768px) {
     .example-card span {
         font-size: 0.9rem;
+    }
+    .examples {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 320px) {
+    .example-card {
+        padding: 0.8rem;
+    }
+
+    .example-card span {
+        font-size: 0.8rem;
+    }
+    .examples {
+        padding: 0;
     }
 }

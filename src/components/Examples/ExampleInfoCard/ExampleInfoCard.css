@@ -120,8 +120,113 @@
     background-color: #23daff;
   }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .examples-info-card h6 {
         font-size: 1.1rem;
     }
+    .examples-info-card {
+      width: 38rem;
+      /* margin-right: 2rem; */
+    }
+}
+
+@media (max-width: 768px) {
+  .examples-info-card h6 {
+      font-size: 1.2rem;
+  }
+  .examples-info-card {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .examples-info-card h6 {
+      font-size: 1.2rem;
+  }
+  .examples-info-card {
+    width: 23.5em;
+  }
+  .runcode {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+  .clear {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+  .copy {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+  .examples-info code {
+    font-size: 0.9rem;
+  }
+  .examples-info-content {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .examples-info-card h6 {
+      font-size: 1.2rem;
+  }
+  .examples-info-card {
+    width: 20.5em;
+  }
+  .runcode {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+  .clear {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+  .copy {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem;
+  }
+  .examples-info code {
+    font-size: 0.9rem;
+  }
+  .examples-info-content {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .examples-info-card h6 {
+    font-size: 1rem;
+  }
+  .examples-info-card {
+    width: 17.125rem;
+  }
+  .runcode {
+    font-size: 0.6rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+  }
+  .clear {
+    font-size: 0.6rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+  }
+  .copy {
+    font-size: 0.6rem;
+    margin: 0.2rem;
+    padding: 0.3rem;
+  }
+
+  .examples-info code {
+    font-size: 0.9rem;
+  }
+  .examples-info-content {
+    overflow-x: auto;
+  }
+
 }

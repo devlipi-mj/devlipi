@@ -84,25 +84,57 @@
     filter: blur(225px);
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .hero-content h2 {
         font-size: 2.5rem;
         line-height: 3.5rem;
+        padding-left: 3.5rem;
     }
 
     .hero-content p {
         font-size: 0.9rem;
         line-height: 1.6rem;
+        padding-left: 3.5rem;
     }
 
     .hero-img > img {
-        width: 30rem;
+        width: 28rem;
     } 
 }
 
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
+        margin-right: 3.125rem;
+    }
+
+    .hero-content h2 {
+        margin-top: 3rem;
+    }
+
+    .hero-content h2,
+    .hero-content p {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-left: 2.5rem;
+    }
+
+    .hero-container::after{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+        top: 2rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-container {
+        flex-direction: column;
+        height: auto;
     }
 
     .hero-content h2 {
@@ -128,3 +160,60 @@
     }
 }
 
+@media (max-width: 375px) {
+    .hero-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-content h2 {
+        margin-top: 3rem;
+    }
+
+    .hero-content h2,
+    .hero-content p {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .hero-container::after{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+        top: 2rem;
+        left: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-content h2 {
+        margin-top: 3rem;
+    }
+
+    .hero-content h2,
+    .hero-content p {
+        width: auto;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-left: 3rem;
+    }
+
+    .hero-container::after{
+        content: " ";
+        width: 18rem;
+        height: 18rem;
+        top: 2rem;
+        left: 1rem;
+    }
+}
