@@ -3,7 +3,14 @@
   margin: 0 auto;
   position: relative;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
+.App {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* For IE and Edge */
+}
 @media (max-width: 1300px) {
   .container {
     padding: 0 1.5rem;
