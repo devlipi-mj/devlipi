@@ -1,7 +1,24 @@
-.tryit-container{
-    height: 90vh;
-}
-.copy {
+.copy-notification-editor {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0EB1D2;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .copy-notification-editor.show {
+    opacity: 1;
+  }
+  
+  .copy-notification-editor.hide {
+    opacity: 0;
+  }
+
+  .copyeditor {
     background-color: #0EB1D2; 
     border: none;
     padding: 0.5rem 1rem;
@@ -12,31 +29,101 @@
     margin: 0 0.8rem 0 0.8rem;
     cursor: pointer;
     border-radius: 5px;
-}
+  }
   
-.copy:hover {
+  .copyeditor:hover {
     background-color: #23daff;
+  }
+  .cleareditor {
+    background-color: #0EB1D2;
+    margin: 0 0.8rem 0 0.8rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
 }
+.cleareditor:hover {
+    background-color: #23daff; /* Darken the background color on hover */
+  }
+
+
+  .runcodeeditor {
+    background-color: #0EB1D2;
+    color: white;
+    margin: 0 0.8rem 0 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
   
-.code-editor {
+  .runcodeeditor:hover {
+    background-color: #23daff; 
+  }
+
+  .tryit-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+  
+  .header {
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .editor-container {
+    margin-top: 2rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .code-editor {
     width: 100%;
     border: 1px solid #ccc;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    max-height: 650px; 
-    min-height: 650px; 
+    max-height: 650px;
+    min-height: 650px;
     resize: none;
     scroll-behavior: smooth;
-}
-
-.editor-output-terminal {
+    flex-grow: 1;
+  }
+  
+  .terminal-container {
+    width: 35%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .terminal-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .editor-output-terminal {
     background-color: black;
     padding: 1rem;
-    margin-top: 1rem;
     border-radius: 0.5rem;
-    overflow-y: auto; 
-    max-height: 200px; 
+    overflow-y: auto;
+    max-height: 200px;
+    flex-grow: 1;
   }
   
   .editor-output-terminal pre {

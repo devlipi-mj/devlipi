@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { MobileNavbar } from './MobileNavbar/MobileNavbar';
+import MobileNavbar from './MobileNavbar/MobileNavbar';
 
-export const Navbar = () => {
+const Navbar = () => {
   const [openMenu, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -31,9 +31,9 @@ export const Navbar = () => {
             <li>
               <a className="menu-item" onClick={() => scrollToSection('examples')}>Examples</a>
             </li>
-            <li>
+            {/* <li>
               <a className="menu-item" onClick={() => scrollToSection('tryit')}>Try It</a>
-            </li>
+            </li> */}
             <li>
               <a className="menu-item" onClick={() => scrollToSection('contact')}>Contact Me</a>
             </li>
@@ -52,3 +52,5 @@ export const Navbar = () => {
     </>
   );
 };
+
+export default Navbar;

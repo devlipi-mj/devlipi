@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section id="hero" className="hero-container">
         <div className="hero-content">
@@ -19,3 +19,5 @@ export const Hero = () => {
     </section>
   )
 }
+
+export default Hero;

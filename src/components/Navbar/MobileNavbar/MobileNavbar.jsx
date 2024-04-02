@@ -1,7 +1,7 @@
 import React from 'react'
 import './MobileNavbar.css'
 
-export const MobileNavbar = ({isOpen, toggleMenu}) => {
+const MobileNavbar = ({isOpen, toggleMenu}) => {
   
   return (
     <>
@@ -19,9 +19,9 @@ export const MobileNavbar = ({isOpen, toggleMenu}) => {
                     <li>
                     <a className="menu-item" href="#examples">Examples</a>
                     </li>
-                    <li>
+                    {/* <li>
                     <a className="menu-item" href="#try-it">Try It</a>
-                    </li>
+                    </li> */}
                     <li>
                     <a className="menu-item" href="#contact-me">Contact Me</a>
                     </li>
@@ -32,3 +32,5 @@ export const MobileNavbar = ({isOpen, toggleMenu}) => {
     </>
   )
 }
+
+export default MobileNavbar;

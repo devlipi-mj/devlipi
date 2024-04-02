@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Examples.css';
 import { EXAMPLES } from '../../utils/data';
-import { ExampleCard } from './ExampleCard/ExampleCard';
-import { ExampleInfoCard } from './ExampleInfoCard/ExampleInfoCard';
+import ExampleCard from './ExampleCard/ExampleCard';
+import ExampleInfoCard from './ExampleInfoCard/ExampleInfoCard';
 
-export const Examples = () => {
+const Examples = () => {
   const [selectedExample, setSelectedExample] = useState(EXAMPLES[0]);
 
   const handleSelectedExample = (data) => {
@@ -36,3 +36,5 @@ export const Examples = () => {
     </section>
   );
 };
+
+export default Examples;

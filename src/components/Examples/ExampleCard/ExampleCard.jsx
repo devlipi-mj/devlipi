@@ -1,7 +1,7 @@
 import React from 'react'
 import './ExampleCard.css'
 
-export const ExampleCard = ({ title, isActive, onClick}) => {
+const ExampleCard = ({ title, isActive, onClick}) => {
   return (
     <div
         className={`example-card ${isActive ? "active" : ""}`}
@@ -11,3 +11,5 @@ export const ExampleCard = ({ title, isActive, onClick}) => {
     </div>
   )
 }
+
+export default ExampleCard;

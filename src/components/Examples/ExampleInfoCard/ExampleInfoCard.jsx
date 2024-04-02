@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import './ExampleInfoCard.css';
 import { Interpreter } from 'devlipi/interpreter'; 
 
-export const ExampleInfoCard = ({ heading, examples }) => {
+const ExampleInfoCard = ({ heading, examples }) => {
   const applyStyles = (text) => {
     return text
       .replace(/\b(kriya|yavat|yadi|anyatha)\b/g, '<span style="color: #9f5cbe">$1</span>')
-      .replace(/\b(prakashan|maxNum|functionName)/g, '<span style="color: #fcec93">$1</span>')
+      .replace(/\b(prakashan|maxNum|functionName)\b/g, '<span style="color: #fcec93">$1</span>')
       .replace(/\b\d+\b/g, '<span style="color: lightgreen">$&</span>')
-      .replace(/@([^\s]+)/g, '@<span style="color: #6dcaff">$1</span>')
+      .replace(/(@\w+)/g, '<span style="color: #6dcaff">$1</span>')
       .replace(/'([^']*)'/g, '\'<span style="color: rgb(204, 119, 34)">$1</span>\'')
       .replace(/->([^<]*)<-/g, '-><span style="color: green">$1</span><-');
-  };
+};
+
 
   const [output, setOutput] = useState('');
 
@@ -19,22 +20,22 @@ export const ExampleInfoCard = ({ heading, examples }) => {
     setOutput('');
     const originalConsoleLog = console.log;
     const originalConsoleError = console.error;
-    
+  
     console.log = (...args) => {
-      originalConsoleLog(...args); 
-      setOutput(prevOutput => prevOutput + args.join(' ') + '\n'); 
+      originalConsoleLog(...args);
+      setOutput((prevOutput) => prevOutput + args.join(' ') + '\n');
     };
-
+  
     console.error = (...args) => {
       originalConsoleError(...args);
-      setOutput(prevOutput => prevOutput + 'Error: ' + args.join(' ') + '\n');
+      setOutput((prevOutput) => prevOutput + 'Error: ' + args.join(' ') + '\n');
     };
-
+  
     return () => {
       console.log = originalConsoleLog;
       console.error = originalConsoleError;
     };
-  }, [examples]); 
+  }, [examples]);
 
   const runDevlipiClass = () => {
     setOutput('');
@@ -103,3 +104,5 @@ export const ExampleInfoCard = ({ heading, examples }) => {
     </div>
   );
 };
+
+export default ExampleInfoCard;
