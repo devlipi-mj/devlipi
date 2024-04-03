@@ -35,7 +35,7 @@ const Download = () => {
         <p>
           Made by{' '}
           <a
-            href="https://www.linkedin.com/in/mayurdhvajsinh-jadeja"
+            href="https://mayurdhvajsinhjadeja.github.io/"
             target="_blank"
             rel="noopener noreferrer"
           >
