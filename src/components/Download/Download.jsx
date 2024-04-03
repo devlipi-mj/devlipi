@@ -28,6 +28,7 @@ const Download = () => {
           <button className='copy' onClick={copyToClipboard}>
               Copy
           </button>
+          <h3>After installation, run the command: <span style={{ color: '#0EB1D2' }}>devlipi</span> to create a file with basic code and install the VS Code extension.</h3>
         </div>
         <a href="https://marketplace.visualstudio.com/items?itemName=MayurdhvajsinhJadeja.devlipi" className='vscode' target='_blank' rel="noreferrer"><button>VS Code Extention</button></a>
         <a href="https://www.npmjs.com/package/devlipi" className='source'target='_blank' rel="noreferrer" ><button>View Source</button></a>
