@@ -97,9 +97,9 @@
         padding-left: 3.5rem;
     }
 
-    .hero-img > img {
+    /* .hero-img > img {
         width: 28rem;
-    } 
+    }  */
 }
 
 @media (max-width: 768px) {
@@ -158,6 +158,9 @@
         top: 2rem;
         left: 1rem;
     }
+    .logo {
+        width: 220px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -187,6 +190,9 @@
         top: 2rem;
         left: 1rem;
     }
+    .logo {
+        width: 320px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -207,6 +213,9 @@
 
     .hero-img {
         margin-left: 3rem;
+    }
+    .logo {
+        width: 320px;
     }
 
     .hero-container::after{

@@ -72,8 +72,7 @@
     }
 
     .examples-container::before{
-        width: 16rem;
-        height: 16em;
+        display: none;
     }
 }
 
